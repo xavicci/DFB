@@ -3,12 +3,20 @@ from accounts.models import CustomUser
 
 
 class CustomUserCreationForm(UserCreationForm):
-    class meta:
+    class Meta(UserCreationForm):
         model = CustomUser
-        fields = UserCreationForm.Meta.fields + ("age",)
+        fields = UserCreationForm.Meta.fields + (
+            "username",
+            "email",
+            "age",
+        )
 
 
 class CustomUserChangeForm(UserChangeForm):
-    class meta:
+    class Meta:
         model = CustomUser
-        fields = UserChangeForm.Meta.fields
+        fields = (
+            "username",
+            "email",
+            "age",
+        )
