@@ -1,0 +1,22 @@
+
+google.com
+trustytcode@gmail.com
+trustytcode123
+
+
+sendgrid.com
+trustytcode@gmail.com
+Proyecto123Proyecto123
+
+
+Server	smtp.sendgrid.net
+Ports	
+25, 587	(for unencrypted/TLS connections)
+465	(for SSL connections)
+Username	apikey
+Password	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
+
+
+
+
+cullinrymbifpcke
