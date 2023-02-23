@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
-from settings_server import *
+# from settings_server import *
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "crispy_bootstrap5",
     "accounts.apps.AccountsConfig",
     "pages.apps.PagesConfig",
+    "articles.apps.ArticlesConfig",
 ]
 
 MIDDLEWARE = [
@@ -110,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "es-mx"
 
-TIME_ZONE = "UTC"
+TIME_ZONE = "America/Guayaquil"
 
 USE_I18N = True
 
@@ -136,8 +137,8 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 
 # enviar correo con google
-EMAIL_HOST = Server
-EMAIL_HOST_USER = email
-EMAIL_HOST_PASSWORD = Password_txt
-EMAIL_PORT = Port
-EMAIL_USE_TLS = True
+# EMAIL_HOST = Server
+# EMAIL_HOST_USER = email
+# EMAIL_HOST_PASSWORD = Password_txt
+# EMAIL_PORT = Port
+# EMAIL_USE_TLS = True
