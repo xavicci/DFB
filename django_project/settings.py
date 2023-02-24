@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
-# from settings_server import *
+from settings_server import *
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -86,7 +86,6 @@ DATABASES = {
     }
 }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
@@ -133,12 +132,11 @@ LOGOUT_REDIRECT_URL = "home"
 CRISPY_ALLOWED_TEMPLATE_PACK = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 
-
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 
 # enviar correo con google
-# EMAIL_HOST = Server
-# EMAIL_HOST_USER = email
-# EMAIL_HOST_PASSWORD = Password_txt
-# EMAIL_PORT = Port
-# EMAIL_USE_TLS = True
+EMAIL_HOST = Server
+EMAIL_HOST_USER = email
+EMAIL_HOST_PASSWORD = Password_txt
+EMAIL_PORT = Port
+EMAIL_USE_TLS = True
